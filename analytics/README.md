@@ -257,3 +257,25 @@ Preprocessing is contained within pipelines to prevent test-data leakage.
 
 SMOTE is applied inside an imbalanced-learn pipeline so that oversampling is
 performed only during model fitting.
+
+## Validation Checklist
+
+- Titanic dataset loaded using `sns.load_dataset("titanic")`.
+- Offline fallback saved as `titanic.csv`.
+- Missing-value threshold rules applied.
+- Age and fare EDA completed.
+- IQR outliers identified.
+- Survival analysis completed by sex, class, and sex plus class.
+- Exact six-column correlation matrix created.
+- Age and fare standardized using z-score scaling.
+- Stratified train/test split used for classification.
+- Train-only preprocessing implemented with pipelines.
+- Logistic Regression, Decision Tree, and Random Forest evaluated.
+- Class-weight balancing and SMOTE evaluated.
+- Random Forest hyperparameters tuned using GridSearchCV.
+- OOB evaluation performed.
+- Fare regression evaluated with MAE, RMSE, R-squared, and Adjusted R-squared.
+- Residual analysis performed.
+- Final comparison table saved.
+- Final fitted pipeline saved with Joblib.
+- Saved pipeline successfully reloaded and tested with raw input.
