@@ -121,9 +121,13 @@ Example response:
 
 ```json
 {
-  "answer": "Based on the retrieved context: ...",
-  "sources": ["doc_01"],
-  "confidence": 1.0
+  "answer": "Based on the retrieved context: Zepto delivers grocery and household essentials to serviceable pin codes within 10 to 30 minutes of order confirmation, depending on the customer's delivery zone and current order volume. Standard del",
+  "sources": [
+    "doc_01",
+    "doc_05",
+    "doc_02"
+  ],
+  "confidence": 1
 }
 ```
 
@@ -146,9 +150,13 @@ Example response:
 
 ```json
 {
-  "answer": "Based on the retrieved context: ...",
-  "sources": ["doc_02"],
-  "confidence": 1.0
+  "answer": "Based on the retrieved context: Grocery and perishable items may be reported for a return within 24 hours of delivery if damaged, spoiled, or incorrect; non-perishable packaged items may be returned within 7 days of delivery in unop",
+  "sources": [
+    "doc_02",
+    "doc_06",
+    "doc_05"
+  ],
+  "confidence": 1
 }
 ```
 
@@ -173,7 +181,7 @@ Response:
 {
   "answer": "I can only answer questions about Zepto policies right now.",
   "sources": [],
-  "confidence": 1.0
+  "confidence": 1
 }
 ```
 
