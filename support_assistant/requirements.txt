@@ -1,0 +1,10 @@
+
+langgraph
+langchain-core
+langchain-groq
+chromadb
+sentence-transformers
+fastapi
+uvicorn[standard]
+pydantic
+
